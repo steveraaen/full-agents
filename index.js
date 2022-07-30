@@ -16,7 +16,7 @@ app.use(function(req, res, next) {
 app.use(express.static(path.join(__dirname, 'client/dist')));
 
 app.get('/api/playeragents', function(req, res) {
-  connection.query(`select playerName, agent from meta`, [parseFloat(req.query.num[0]), parseFloat(req.query.num[1])], function (error, results, fields) {              
+  connection.query(`select playerName, agent from meta`, function (error, results, fields) {              
     res.json(results)
     if (error) throw error;
    });
