@@ -13,7 +13,7 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'client/dist/index.html')));
+app.use(express.static(path.join(__dirname, 'client/dist')));
 
 app.get('/api/playeragents', function(req, res) {
   connection.query(`select playerName, agent from meta`, [parseFloat(req.query.num[0]), parseFloat(req.query.num[1])], function (error, results, fields) {              
