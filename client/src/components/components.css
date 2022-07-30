@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+".MuiDataGrid-columnHeaders"{
+  backgroundColor: "rgba(0,0,255,0.6)",
+  color: "rgba(255,0,0,0.7)",
+  fontSize: 16
+}
+.labelText{
+	font-family: Arial, Helvetica, sans-serif;
+}
+.tableLabel{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: '1.3em';
+	text-align: center;
+}
+.MuiGrid-container{
+	background-color: 'black'
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: '1.3em';
+	text-align: center;	
+}
